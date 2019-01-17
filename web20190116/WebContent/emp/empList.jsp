@@ -31,11 +31,15 @@
 				//String dbPass = "1234";
 				
 				String poolUrl = "jdbc:apache:commons:dbcp:pooltest";
+				conn = DriverManager.getConnection(poolUrl);
+				
+				
+				
 				
 				String query = "select * from emp order by empno";
 				// 2. 데이터베이스 커넥션 생성
 				//conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
-				conn = DriverManager.getConnection(poolUrl);
+				
 				// 3. Statement 생성
 				stmt = conn.createStatement();
 
