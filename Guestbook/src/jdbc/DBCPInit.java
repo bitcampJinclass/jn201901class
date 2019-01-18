@@ -15,6 +15,10 @@ import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
 
 
+
+
+
+
 public class DBCPInit extends HttpServlet {
 	
 
@@ -41,9 +45,9 @@ public class DBCPInit extends HttpServlet {
 
 	private void initConnectionPool() {
 
-		String jdbcDriver = "jdbc:oracle:thin:@localhost:1522:orcl";
-		String username = "scott";
-		String pw = "tiger";
+		String jdbcDriver = "jdbc:oracle:thin:@localhost:1522:xe";
+		String username = "student";
+		String pw = "1234";
 
 		
 		try {
