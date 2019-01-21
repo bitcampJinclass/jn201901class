@@ -12,6 +12,7 @@
 	<a href="member/mypage.jsp">마이페이지</a> <br>
 	<a href="admin/admin.jsp">관리자페이지</a> <br>
 	<a href="logout.jsp">로그아웃</a> <br>
+	<a href="regForm.jsp">회원가입</a> <br>
 </h1>
 </body>
 </html>
