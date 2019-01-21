@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>마이페이지</h1>
+<h1>어드민페이지</h1>
 <h3>로그인을 해야만 볼수 있습니다.</h3>
 </body>
 </html>
