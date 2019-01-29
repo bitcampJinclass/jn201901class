@@ -9,6 +9,8 @@
 
 
 	<context:annotation-config />
+	
+	<context:component-scan base-package="spring"/>
 
 
 	<bean class="spring.dao.MemberDao" id="memberdao" >
