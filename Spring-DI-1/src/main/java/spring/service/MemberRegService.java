@@ -22,4 +22,10 @@ public class MemberRegService {
 		dao.insert();
 	}
 
+	
+	
+	
+	
+	
+	
 }

@@ -2,20 +2,44 @@
 
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans
-http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean
-			class="spring.dao.MemberDao"
-			id="dao"	
-	/>
-	
+
+
+
+	<bean class="spring.dao.MemberDao" id="daos" />
+
+
 	<bean id="regService" class="spring.service.MemberRegService">
-		<constructor-arg ref="dao" />
+		<constructor-arg>
+			<!-- <bean class="spring.dao.MemberDao"/> -->
+			<ref bean="daos" />
+		</constructor-arg>
 	</bean>
-	
-	<bean id="changeService" class="spring.service.MemberPwChangeService">
-		<constructor-arg ref="dao"/>
+
+
+	<bean id="changeService"
+		class="spring.service.MemberPwChangeService" autowire="byType">
+<!-- 		<property name="dao">
+			<ref bean="dao" />
+		</property> -->
 	</bean>
+
+
+	<bean id="changeService1"
+		class="spring.service.MemberPwChangeService"  autowire="byType"
+		scope="prototype"
+		>
+<!-- 		<property name="dao">
+			<ref bean="dao" />
+		</property> -->
+	</bean>
+
+
+
+
+
+
 
 </beans>
