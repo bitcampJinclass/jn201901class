@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 <html>
@@ -17,6 +19,7 @@ http://localhost/mvc/member/regForm
 <ul>
 	<li><a href="<%= request.getContextPath() %>/hello">/hello</a></li>
 	<li><a href="member/regForm">/member/regForm</a></li>
+	<li><a href="member/memberReg">회원가입</a></li>
 </ul>
 
 
