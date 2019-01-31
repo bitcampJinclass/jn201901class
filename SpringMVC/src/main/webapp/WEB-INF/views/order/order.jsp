@@ -5,9 +5,33 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>주문 완료</title>
 </head>
 <body>
+<h1>주문 내역</h1>
+
+	<c:forEach items="${orders.orderItems}" var="item">
+		<div>
+			${item.itemId} : ${item.number} : ${item.remark}
+		</div>	
+	</c:forEach>
+
+<h1>배송지</h1>
+${orders.address.zipcode} / ${orders.address.address1} / ${orders.address.address2}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
