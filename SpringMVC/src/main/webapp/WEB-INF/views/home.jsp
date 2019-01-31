@@ -15,11 +15,13 @@
 http://localhost/mvc/ <br>
 http://localhost/mvc/hello <br>
 http://localhost/mvc/member/regForm
+http://localhost/mvc/order/order
 
 <ul>
 	<li><a href="<%= request.getContextPath() %>/hello">/hello</a></li>
 	<li><a href="member/regForm">/member/regForm</a></li>
 	<li><a href="member/memberReg">회원가입</a></li>
+	<li><a href="order/order">상품주문</a></li>
 </ul>
 
 
