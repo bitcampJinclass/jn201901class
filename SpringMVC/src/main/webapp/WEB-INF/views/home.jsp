@@ -14,10 +14,12 @@
 
 http://localhost/mvc/ <br>
 http://localhost/mvc/hello <br>
-http://localhost/mvc/member/regForm
-http://localhost/mvc/order/order
-http://localhost/mvc/cookie/makeCookie
-http://localhost/mvc/header/view
+http://localhost/mvc/member/regForm <br>
+http://localhost/mvc/order/order <br>
+http://localhost/mvc/cookie/makeCookie <br>
+http://localhost/mvc/header/view <br>
+http://localhost/mvc/search/searchForm <br>
+http://localhost/mvc/fileupload/form <br>
 
 <ul>
 	<li><a href="<%= request.getContextPath() %>/hello">/hello</a></li>
@@ -26,6 +28,8 @@ http://localhost/mvc/header/view
 	<li><a href="order/order">상품주문</a></li>
 	<li><a href="cookie/makeCookie">쿠키 생성 및 확인</a></li>
 	<li><a href="header/view">해더 정보 확인</a></li>
+	<li><a href="search/searchForm">검색 페이지</a></li>
+	<li><a href="fileupload/form">파일업로드</a></li>
 </ul>
 
 
