@@ -30,6 +30,24 @@ public class MemberRegController {
 		return "member/insert";
 	}
 	
+	
+	@RequestMapping("/member/memberReg1")
+	public String insert1() {
+		
+		Member member = new Member();
+		member.setEmail("ryuyj761@naver.com");
+		member.setPassword("~!@!$%");
+		member.setName("홍길동");
+		
+		System.out.println(member);
+		
+		int rcnt = service.insertMemberKey(member);
+		
+		System.out.println(member);
+		
+		return "member/insert";
+	}
+	
 	@RequestMapping("/member/view")
 	public String getMember(
 			
@@ -37,7 +55,7 @@ public class MemberRegController {
 			
 			) {
 		
-		String email = "ryuyj1@nate.com";
+		String email = "ryuyj@nate.com";
 		Member member = selectService.selectByEmail(email);
 		
 		model.addAttribute("result", member);
