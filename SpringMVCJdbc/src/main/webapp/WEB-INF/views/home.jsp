@@ -11,8 +11,8 @@ http://localhost/app/member/memberReg
 
 	<ul>
 		<li><a href="member/memberReg">reg member</a></li>
-		<li><a href="member/view/ryuyj@nate.com">view member1</a></li>
-		<li><a href="member/view/ryuyj1@nate.com">view member2</a></li>
+		<li><a href="member/view">view member1</a></li>
+		
 	</ul>
 
 

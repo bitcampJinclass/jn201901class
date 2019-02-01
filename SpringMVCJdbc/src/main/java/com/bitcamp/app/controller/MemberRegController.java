@@ -30,14 +30,14 @@ public class MemberRegController {
 		return "member/insert";
 	}
 	
-	@RequestMapping("/member/view/{email}")
+	@RequestMapping("/member/view")
 	public String getMember(
 			
-			@PathVariable("email") String email,
 			Model model		
 			
 			) {
 		
+		String email = "ryuyj1@nate.com";
 		Member member = selectService.selectByEmail(email);
 		
 		model.addAttribute("result", member);
