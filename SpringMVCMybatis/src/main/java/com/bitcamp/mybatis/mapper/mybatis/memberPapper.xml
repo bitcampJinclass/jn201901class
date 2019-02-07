@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE 
+mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bitcamp.mybatis.mapper.mybatis.memberMapper">
+
+	<insert id="insertMember"
+			parameterType="com.bitcamp.mybatis.model.Member"
+			useGeneratedKeys="true"
+			keyProperty="id"	
+	>
+		insert into member (email, password, name, photo) 
+		value ( #{email}, #{password}, #{name}, #{photo} )
+		
+	</insert>
+	
+	<select id="selectById"			
+			resultType="com.bitcamp.mybatis.model.Member"
+	>
+	
+		select * from member where email=#{param} 
+	
+	</select>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	<!-- 질의 검색을 위한 sql 등록 엘리먼트 -->
+	<!-- <select id="">
+	
+		<include refid="bsql"></include>
+		<if test=""> </if>
+		
+		<where>
+			<if test="이름 != null">name = #{name}</if>
+			<if test="이름 != null">name = #{name}</if>
+			<if test="이름 != null">name = #{name}</if>
+		</where>
+		
+		<set></set>
+		
+	
+	</select> -->
+
+	<!-- 로우 삭제를 위한 sql 등록 엘리먼트 -->
+	<!-- <delete id=""></delete> -->
+
+	<!-- 로우 삽입을 위한 sql 등록 엘리먼트 -->
+	<!-- <insert id=""></insert> -->
+
+	<!--  로우 데이터 수정을 위한 sql 등록 엘리먼트 -->
+	<!-- <update id=""></update> -->
+	
+	<!-- <parameterMap type="" id=""></parameterMap>
+	<resultMap type="" id=""></resultMap>
+	 -->
+	<!-- <sql id="bsql">select * from member</sql> --> 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+</mapper>

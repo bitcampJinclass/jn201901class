@@ -21,7 +21,9 @@ public class MemberDao {
 
 	public int insertMember() {
 
-		String sql = "insert into member " + "(email, password, name, photo)" + " value (?,?,?,?)";
+		String sql = "insert into member " 
+					+ "(email, password, name, photo)" 
+					+ " value (?,?,?,?)";
 
 		int resultCnt = template.update(sql, "ryuyj1@nate.com", "1111", "유영진", null);
 
