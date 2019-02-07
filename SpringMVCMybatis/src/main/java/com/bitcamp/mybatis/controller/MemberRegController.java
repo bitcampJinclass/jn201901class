@@ -1,5 +1,7 @@
 package com.bitcamp.mybatis.controller;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Controller;
@@ -18,6 +20,16 @@ public class MemberRegController {
 	
 	@Inject
 	private MemberViewService viewService;
+	
+	@RequestMapping("/member/list")
+	public String selectList(Model model) {
+		
+		List<Member> members = viewService.selectList();
+		
+		model.addAttribute("members", members);
+		
+		return "member/list";
+	}
 	
 	
 	@RequestMapping("member/view")
@@ -40,9 +52,9 @@ public class MemberRegController {
 	public String memberReg() {
 		
 		Member member = new Member();
-		member.setEmail("hot@naver.com");
-		member.setPassword("!!!@@");
-		member.setName("철수");
+		member.setEmail("coolinhot@naver.com");
+		member.setPassword("qwer");
+		member.setName("영희");
 		
 		System.out.println(member);
 		

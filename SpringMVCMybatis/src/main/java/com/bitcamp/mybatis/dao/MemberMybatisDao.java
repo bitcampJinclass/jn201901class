@@ -1,5 +1,7 @@
 package com.bitcamp.mybatis.dao;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.mybatis.spring.SqlSessionTemplate;
@@ -23,6 +25,10 @@ public class MemberMybatisDao {
 
 	public Member selectById(String email) {
 		return sqlSession.selectOne(namespace+".selectById", email);
+	}
+
+	public List<Member> selectList() {
+		return sqlSession.selectList(namespace+".selectList");
 	}
 	
 	

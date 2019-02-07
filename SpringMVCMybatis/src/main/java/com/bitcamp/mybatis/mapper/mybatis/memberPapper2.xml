@@ -3,9 +3,9 @@
 mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.bitcamp.mybatis.mapper.mybatis.memberMapper">
+<mapper namespace="com.bitcamp.mybatis.dao.MemberDao">
 
-	<insert id="insertMember"
+	<insert id="inserMember"
 			parameterType="com.bitcamp.mybatis.model.Member"
 			useGeneratedKeys="true"
 			keyProperty="id"	

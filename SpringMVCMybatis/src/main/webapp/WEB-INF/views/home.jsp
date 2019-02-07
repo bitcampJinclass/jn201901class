@@ -11,6 +11,7 @@
 <ul>
 	<li><a href="member/reg">member Reg</a></li>
 	<li><a href="member/view">member View</a></li>
+	<li><a href="member/list">member List</a></li>
 </ul>
 </body>
 </html>
