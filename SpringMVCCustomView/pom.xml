@@ -119,12 +119,20 @@
 		</dependency>
 
 
-		<!-- poi : 엑셀 응답 처리-->
+		<!-- poi : 엑셀 응답 처리 -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>3.9</version>
 		</dependency>
+		
+		<!-- PDF 응답 처리 -->
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+			<version>2.1.7</version>
+		</dependency>
+
 
 
 	</dependencies>

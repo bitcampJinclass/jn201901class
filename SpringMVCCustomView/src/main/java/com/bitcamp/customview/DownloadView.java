@@ -49,7 +49,7 @@ public class DownloadView extends AbstractView {
 		response.setHeader(
 				
 				"Content-Disposition",								
-				"attachment; filename=\""+fileName+"\";"
+				"attachment; filename=\""+fileName+".jpg\";"
 				
 				); 
 		

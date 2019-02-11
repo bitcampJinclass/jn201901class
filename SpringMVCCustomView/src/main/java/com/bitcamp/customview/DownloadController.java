@@ -17,7 +17,19 @@ public class DownloadController implements ApplicationContextAware {
 
 	private WebApplicationContext context;
 	
-	@RequestMapping("download/pageRanksXLS")
+	@RequestMapping("download/pageRanksPDF") // pageRanksXLS.xls
+	public ModelAndView getRanksPDF() {
+		
+		List<PageRanks> pageRanks = new ArrayList<PageRanks>();
+		pageRanks.add(new PageRanks(1, "http://www.naver.com"));
+		pageRanks.add(new PageRanks(2, "http://www.daum.com"));
+		pageRanks.add(new PageRanks(3, "http://www.nate.com"));
+		
+		return new ModelAndView("pagesRanksPDF", "pageRanks", pageRanks );
+	}
+
+	
+	@RequestMapping("download/pageRanksXLS") // pageRanksXLS.xls
 	public ModelAndView getRanksXls() {
 		
 		List<PageRanks> pageRanks = new ArrayList<PageRanks>();

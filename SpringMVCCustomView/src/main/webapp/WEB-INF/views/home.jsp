@@ -12,6 +12,7 @@
 <ul>
 	<li><a href="download/file">donload/file</a></li>
 	<li><a href="download/pageRanksXLS">download/pageRanksXLS</a></li>
+	<li><a href="download/pageRanksPDF">download/pageRanksPDF</a></li>
 </ul>
 
 
