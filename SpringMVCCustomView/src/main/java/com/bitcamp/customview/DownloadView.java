@@ -29,7 +29,7 @@ public class DownloadView extends AbstractView {
 		
 		
 		boolean ie = 
-				userAgent.indexOf("rv") > -1;
+				userAgent.indexOf("rv") > -1 || userAgent.indexOf("MSIE") > -1 ;
 
 		String fileName = null;
 

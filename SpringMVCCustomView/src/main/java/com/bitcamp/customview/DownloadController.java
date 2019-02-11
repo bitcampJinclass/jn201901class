@@ -1,6 +1,8 @@
 package com.bitcamp.customview;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
@@ -14,6 +16,17 @@ import org.springframework.web.servlet.ModelAndView;
 public class DownloadController implements ApplicationContextAware {
 
 	private WebApplicationContext context;
+	
+	@RequestMapping("download/pageRanksXLS")
+	public ModelAndView getRanksXls() {
+		
+		List<PageRanks> pageRanks = new ArrayList<PageRanks>();
+		pageRanks.add(new PageRanks(1, "http://www.naver.com"));
+		pageRanks.add(new PageRanks(2, "http://www.daum.com"));
+		pageRanks.add(new PageRanks(3, "http://www.nate.com"));
+		
+		return new ModelAndView("pagesRanks", "pageRanks", pageRanks );
+	}
 
 	
 	@RequestMapping("/download/file")
