@@ -11,6 +11,14 @@ public class MailSenderController {
 	@Inject
 	private MailSendService mailService;
 
+	@RequestMapping("/mail/mailsend")
+	public String mailSend() {
+		
+		mailService.mailSneder("ryuyj76@naver.com");
+		
+		return "mail/mailsend";
+	}
+
 	@RequestMapping("/mail/simplemailsend")
 	public String simpleMailSend() {
 		

@@ -11,6 +11,7 @@
 
 <ul>
 	<li><a href="mail/simplemailsend">/mail/simplemailsend</a></li>
+	<li><a href="mail/mailsend">/mail/mailsend</a></li>
 </ul>
 </body>
 </html>
