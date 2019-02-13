@@ -12,6 +12,16 @@
 <ul>
 	<li><a href="guest/messages/xml">/guest/messages/xml</a></li>
 	<li><a href="guest/messages/json">/guest/messages/json</a></li>
+	<li><a href="rest/msgs/25">/rest/msgs/25</a></li>
+	<li><a href="rest/messages/25">/rest/messages/25</a></li>
+	<li><a href="rest/messages">/rest/messages</a></li>
+	<li><a href="guest/form">/guest/form</a></li>
 </ul>
+
+
+
+
+
+
 </body>
 </html>

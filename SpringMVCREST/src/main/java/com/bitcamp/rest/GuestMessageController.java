@@ -38,6 +38,12 @@ public class GuestMessageController {
 	}
 	
 	
+	@RequestMapping("/guest/form")
+	public String getForm() {
+		return "form";
+	}
+	
+	
 	
 	
 	
